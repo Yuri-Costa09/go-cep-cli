@@ -27,7 +27,7 @@ var rootCmd = &cobra.Command{
 
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
-		fmt.Fprintf(os.Stderr, "Oops. An error while executing Zero '%s'\n", err)
+		fmt.Fprintf(os.Stderr, "Oops. An error while executing ceptools '%s'\n", err)
 		os.Exit(1)
 	}
 }
