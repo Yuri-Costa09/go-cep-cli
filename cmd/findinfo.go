@@ -11,7 +11,7 @@ var FindInfoCmd = &cobra.Command{
 	Use:     "findinfo",                            // COMMAND NAME
 	Aliases: []string{"findinfo, findinformation"}, // EXTRA NAMES THAT CAN BE USED TO CALL THE COMMAND
 	Short:   "Finds information about a CEP",       // SHORT DESCRIPTION OF THE COMMAND
-	Args:    cobra.ExactArgs(1),                    // ARGUMENTS THAT THE COMMAND EXPECTS
+	Args:    cobra.ExactArgs(1),                    // HOW ARGUMENTS THAT THE COMMAND EXPECTS
 	Run: func(cmd *cobra.Command, args []string) {
 		cep := args[0]                     // GET THE CEP FROM THE ARGUMENTS
 		endereco := api.FetchEndereco(cep) // FETCH THE ENDERECO FROM THE API
