@@ -1,9 +1,8 @@
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/Yuri-Costa09/go-cep-cli/api"
+	"github.com/Yuri-Costa09/go-cep-cli/utils"
 	"github.com/spf13/cobra"
 )
 
@@ -15,7 +14,7 @@ var FindInfoCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		cep := args[0]
 		endereco := api.FetchEndereco(cep)
-		fmt.Println(endereco)
+		utils.PrintEndereco(endereco)
 	},
 }
 
