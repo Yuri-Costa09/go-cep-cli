@@ -24,3 +24,5 @@ var AddCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(AddCmd)
 }
+
+// THIS IS AN EXAMPLE FILE FOR HELLO COMMAND

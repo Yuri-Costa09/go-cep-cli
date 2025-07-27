@@ -7,6 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// THIS IS THE ROOT COMMAND
 var rootCmd = &cobra.Command{
 	Use:   "ceptools",
 	Short: "Uma ferramenta CLI para busca de CEP",
@@ -25,6 +26,7 @@ var rootCmd = &cobra.Command{
 	},
 }
 
+// THIS IS THE FUNCTION THAT EXECUTES THE ROOT COMMAND
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Fprintf(os.Stderr, "Oops. An error while executing ceptools '%s'\n", err)
